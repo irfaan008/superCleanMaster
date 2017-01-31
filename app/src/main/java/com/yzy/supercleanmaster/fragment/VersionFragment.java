@@ -38,7 +38,7 @@ public class VersionFragment extends Fragment {
 
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         getActivity().getActionBar().setDisplayShowHomeEnabled(false);
-        getActivity().getActionBar().setTitle("版本信息");
+        getActivity().getActionBar().setTitle(R.string.version_info);
 
     }
 

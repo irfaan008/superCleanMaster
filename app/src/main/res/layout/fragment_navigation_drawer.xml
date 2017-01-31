@@ -45,7 +45,7 @@
                     android:paddingEnd="0dp"
                     android:paddingLeft="17dp"
                     android:paddingRight="0dp"
-                    android:text="首页"
+                    android:text="@string/home"
                     android:textColor="@drawable/drawer_selector_font"
                     android:textSize="17sp" />
             </RelativeLayout>
@@ -61,7 +61,7 @@
                 android:gravity="center_vertical|left"
                 android:paddingLeft="17dp"
                 android:paddingRight="0dp"
-                android:text="轻松一下"
+                android:text="@string/relax"
                 android:textColor="@drawable/drawer_selector_font"
                 android:textSize="17sp" />
 
@@ -76,7 +76,7 @@
                 android:gravity="center_vertical|left"
                 android:paddingLeft="17dp"
                 android:paddingRight="0dp"
-                android:text="设置"
+                android:text="@string/settings"
                 android:textColor="@drawable/drawer_selector_font"
                 android:textSize="17sp" />
 

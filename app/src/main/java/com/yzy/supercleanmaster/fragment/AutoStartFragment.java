@@ -118,7 +118,7 @@ public class AutoStartFragment extends BaseFragment {
 
         ShellUtils.CommandResult mCommandResult = ShellUtils.execCommand(mSring, true, true);
         if (mCommandResult.result == 0) {
-            T.showLong(mContext, "应用已经全部禁止");
+            T.showLong(mContext, getString(R.string.disabled_msg));
             for (AutoStartInfo auto : noSystemAuto) {
                 if (auto.isEnable()) {
                     auto.setEnable(false);
@@ -127,7 +127,7 @@ public class AutoStartFragment extends BaseFragment {
             mAutoStartAdapter.notifyDataSetChanged();
             refeshButoom();
         } else {
-            T.showLong(mContext, "该功能需要获取系统root权限，请允许获取root权限");
+            T.showLong(mContext, getString(R.string.root_msg_allow));
         }
     }
 
@@ -135,10 +135,10 @@ public class AutoStartFragment extends BaseFragment {
     private void fillData() {
 
         if (position == 0) {
-            topText.setText("禁止下列软件自启,可提升运行速度");
+            topText.setText(R.string.enhance_speed_msg);
 
         } else {
-            topText.setText("禁止系统核心软件自启,将会影响手机的正常使用,请谨慎操作");
+            topText.setText(R.string.enhance_speed_msg_long);
 
         }
 
@@ -181,7 +181,7 @@ public class AutoStartFragment extends BaseFragment {
             }
             if (canDisableCom > 0) {
                 bottom_lin.setVisibility(View.VISIBLE);
-                disableButton.setText("可优化" + canDisableCom + "款");
+                disableButton.setText(getString(R.string.optimised) + canDisableCom + getString(R.string.paragraph));
             } else {
                 bottom_lin.setVisibility(View.GONE);
             }

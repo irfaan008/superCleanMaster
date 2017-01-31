@@ -78,10 +78,10 @@ public class AutoStartAdapter extends BaseAdapter {
             holder.appName.setText(item.getLabel());
             if (item.isEnable()) {
                 holder.disable_switch.setBackgroundResource(R.drawable.switch_on);
-                holder.disable_switch.setText("已开启");
+                holder.disable_switch.setText(R.string.msg_turned_on);
             } else {
                 holder.disable_switch.setBackgroundResource(R.drawable.switch_off);
-                holder.disable_switch.setText("已禁止");
+                holder.disable_switch.setText(R.string.disabled_button);
             }
             // holder.size.setText(Formatter.formatShortFileSize(mContext, item.getCacheSize()));
 
@@ -103,7 +103,7 @@ public class AutoStartAdapter extends BaseAdapter {
 
                     } else {
 
-                        T.showLong(mContext, "该功能需要获取系统root权限，点击允许获取root权限");
+                        T.showLong(mContext, mContext.getString(R.string.root_msg));
 
                     }
 
@@ -131,7 +131,7 @@ public class AutoStartAdapter extends BaseAdapter {
         ShellUtils.CommandResult mCommandResult = ShellUtils.execCommand(mSring, true, true);
 
         if (mCommandResult.result == 0) {
-            T.showLong(mContext, item.getLabel() + "已禁止");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.disabled));
             item.setEnable(false);
             notifyDataSetChanged();
             if (mHandler != null) {
@@ -159,7 +159,7 @@ public class AutoStartAdapter extends BaseAdapter {
         ShellUtils.CommandResult mCommandResult = ShellUtils.execCommand(mSring, true, true);
 
         if (mCommandResult.result == 0) {
-            T.showLong(mContext, item.getLabel() + "已开启");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.turned_onn));
             item.setEnable(true);
             notifyDataSetChanged();
             if (mHandler != null) {
