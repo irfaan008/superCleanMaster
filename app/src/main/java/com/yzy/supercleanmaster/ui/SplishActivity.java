@@ -58,7 +58,7 @@ public class SplishActivity extends BaseActivity {
         // TODO Auto-generated method stub
         Intent intent = new Intent();
         intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
-        intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "一键加速");
+        intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.accelerate));
         intent.putExtra("duplicate", false);
         intent.putExtra(Intent.EXTRA_SHORTCUT_ICON, BitmapFactory.decodeResource(getResources(), R.drawable.short_cut_icon));
         Intent i = new Intent();

@@ -243,7 +243,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             // 如果时间间隔大于2秒, 不处理
             if ((currentTime - preTime) > TWO_SECOND) {
                 // 显示消息
-                T.showShort(mContext, "再按一次退出应用程序");
+                T.showShort(mContext, getString(R.string.exit_msg));
 
                 // 更新时间
                 preTime = currentTime;

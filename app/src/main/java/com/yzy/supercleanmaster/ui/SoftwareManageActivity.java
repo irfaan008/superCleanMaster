@@ -133,7 +133,7 @@ public class SoftwareManageActivity extends BaseSwipeBackActivity {
 
     public class MyPagerAdapter extends WeakFragmentPagerAdapter {
 
-        private final String[] TITLES = {"用户软件", "预装软件"};
+        private final String[] TITLES = {getString(R.string.user_softwares), getString(R.string.pre_installed_sw)};
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);

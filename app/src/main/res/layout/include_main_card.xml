@@ -22,7 +22,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                card:card_name="内存加速"
+                card:card_name="@string/memory_acceleration"
                 card:card_image="@drawable/card_icon_speedup" />
 
 
@@ -44,7 +44,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                card:card_name="垃圾清理"
+                card:card_name="@string/garbage_clean_up"
                 card:card_image="@drawable/card_icon_trash" />
         </RelativeLayout>
     </LinearLayout>
@@ -71,7 +71,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                card:card_name="自启管理"
+                card:card_name="@string/self_management"
                 card:card_image="@drawable/card_icon_autorun" />
 
         </RelativeLayout>

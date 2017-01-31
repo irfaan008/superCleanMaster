@@ -22,11 +22,11 @@ public class AboutActivity extends BaseSwipeBackActivity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         getActionBar().setHomeButtonEnabled(true);
-        getActionBar().setTitle("关于");
+        getActionBar().setTitle(R.string.home_title);
         TextView tv = (TextView) findViewById(R.id.app_information);
         Linkify.addLinks(tv, Linkify.ALL);
 
-        subVersion.setText("V"+ AppUtil.getVersion(mContext));
+        subVersion.setText(getString(R.string.app_version)+ AppUtil.getVersion(mContext));
 
     }
 

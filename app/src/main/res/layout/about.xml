@@ -115,7 +115,7 @@
                     android:paddingLeft="10.0dip"
                     android:paddingRight="10.0dip"
                     android:singleLine="true"
-                    android:text="作者:"
+                    android:text="@string/author"
                     android:textSize="15sp" />
 
                 <TextView

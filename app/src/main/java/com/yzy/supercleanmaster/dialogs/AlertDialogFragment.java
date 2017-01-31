@@ -6,6 +6,9 @@ import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+
+import com.yzy.supercleanmaster.R;
+
 /**
  * © 2012 amsoft.cn
  * 名称：AbAlertDialogFragment.java 
@@ -66,7 +69,7 @@ public class AlertDialogFragment extends DialogFragment {
 		}
 		
 		if(mOnClickListener != null){
-			builder.setPositiveButton("确认",
+			builder.setPositiveButton(R.string.alert_confirm_button,
 	            new DialogInterface.OnClickListener() {
 	                public void onClick(DialogInterface dialog, int whichButton) {
 	                	if(mOnClickListener != null){
@@ -75,7 +78,7 @@ public class AlertDialogFragment extends DialogFragment {
 	                }
 	            }
 		     );
-		     builder.setNegativeButton("取消",
+		     builder.setNegativeButton(R.string.alert_cancel_button,
 	            new DialogInterface.OnClickListener() {
 	                public void onClick(DialogInterface dialog, int whichButton) {
 	                	if(mOnClickListener != null){
